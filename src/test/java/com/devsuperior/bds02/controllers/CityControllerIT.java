@@ -63,7 +63,7 @@ public class CityControllerIT {
 	@Test
 	public void deleteShouldReturnNoContentWhenIndependentId() throws Exception {		
 		
-		Long independentId = 5L;
+		Long independentId = 1L;
 		
 		ResultActions result =
 				mockMvc.perform(delete("/cities/{id}", independentId));
