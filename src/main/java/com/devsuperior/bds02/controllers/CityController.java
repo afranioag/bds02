@@ -32,7 +32,7 @@ public class CityController {
         return ResponseEntity.created(uri).body(dto);
     }
 
-    @DeleteMapping("/id")
+    @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable Long id){
         cityService.delete(id);
         return ResponseEntity.noContent().build();
